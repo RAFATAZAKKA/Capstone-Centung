@@ -1,15 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:padding="16dp">
+    android:padding="32dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Sign Up Page"
-        android:textColor="#000000"
-        android:textSize="24sp" />
-</RelativeLayout>
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Welcome to Centung Mobile"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Your Account to start Application"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Illustration Image -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/register_illustration" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_border"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input_border"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textPassword"
+            android:background="@drawable/input_border"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:backgroundTint="#2962FF"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Login Link -->
+        <TextView
+            android:id="@+id/tv_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Sign In"
+            android:layout_marginTop="120dp"
+            android:textColor="#2962FF"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>

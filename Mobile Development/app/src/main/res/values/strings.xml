@@ -1,3 +1,33 @@
 <resources>
+    <!-- App Name -->
     <string name="app_name">Centung Mobile</string>
+
+    <!-- Loading Screen -->
+    <string name="loading_message">Loading...</string>
+
+    <!-- Welcome Screen -->
+    <string name="welcome_message">Welcome to</string>
+    <string name="centung_mobile">Centung Mobile</string>
+    <string name="login_button">Log In</string>
+    <string name="signup_button">Sign Up</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">Welcome to Centung Mobile</string>
+    <string name="login_subtitle">Login your account to start application</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_action">Sign In</string>
+    <string name="signup_redirect">Dont have an account? Sign Up</string>
+
+    <!-- Sign Up Screen -->
+    <string name="signup_title">Welcome to Centung Mobile</string>
+    <string name="signup_subtitle">Register your account to start application</string>
+    <string name="fullname_hint">Full Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="signup_action">Sign Up</string>
+    <string name="signin_redirect">Already have an account? Sign In</string>
+
+    <!-- Validation and Errors -->
+    <string name="error_empty_email_password">Please enter email and password</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
 </resources>

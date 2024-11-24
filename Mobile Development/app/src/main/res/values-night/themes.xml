@@ -1,7 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.CentungMobile" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item> <!-- Nonaktifkan tinting -->
+        <item name="android:backgroundTint">@null</item> <!-- Untuk kompatibilitas -->
+    </style>
+
+    <style name="Theme.CentungMobile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+        <!-- Warna utama aplikasi -->
+        <item name="colorPrimary">#0039CB</item>
+        <item name="colorPrimaryVariant">#001F8E</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Warna status bar -->
+        <item name="android:statusBarColor">#0039CB</item>
+        <item name="android:navigationBarColor">#0039CB</item>
     </style>
 </resources>

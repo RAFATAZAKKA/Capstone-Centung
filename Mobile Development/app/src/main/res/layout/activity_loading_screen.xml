@@ -21,9 +21,9 @@
         android:layout_below="@id/logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Centung Mobile"
+        android:text="Centung \n  Mobile"
         android:textColor="#FFFFFF"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <!-- Subtitle -->
